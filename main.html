@@ -4,6 +4,88 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		*{
+	background-color:#f6f6f6;
+}
+.main{
+	display:flex;
+	gap:10px;
+}
+.left img{
+			width:100px;
+		}
+		p{
+			width:70vh;
+			font-weight:bold;
+		}
+
+.rightdiv{
+	background-color:white;
+	padding:15px;
+	border:1px solid #c9c9c9 ;
+	border-radius:5px;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+input{
+	margin-bottom:10px;
+	outline:none;
+	border:1px solid #c9c9c9;
+	border-radius:2px;
+}
+input::placeholder{
+	font-size:10px;
+
+}
+button{
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	/* margin-bottom:10px; */
+}
+
+#login{
+	width:100%;
+	background-color:#1a77f2;
+	color:white;
+	border:none;
+	font-size:9px;
+	padding:5px;
+	border-radius:3px;
+	
+}
+
+#forget{
+	color:#1a77f2;
+	font-size:12px;
+	margin-top:3px;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	margin-left:35px;
+}
+.line{
+	width:100%;
+	background-color:#c9c9c9;
+	border:1px solid #c9c9c9;
+	margin:5px 0;
+	
+}
+.signup{
+	width:70%;
+	background-color:#43b72a;
+	color:white;
+	border:none;
+	padding:5px;
+	border-radius:3px;
+	font-size:10px;
+	justify-content:center;
+	align-item:center;
+	margin-left:25px;
+}
+
+	</style>
 </head>
 
 <body>
@@ -11,8 +93,8 @@
 
 <div class="main">
 
-	<div class="leftdiv">
-<img class="left img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSypjyDWPw5guTL_ZwL54MTKOFodJP__8aQ&s" alt="Facebook">
+	<div class="left">
+<img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSypjyDWPw5guTL_ZwL54MTKOFodJP__8aQ&s" alt="Facebook">
 		<p>Facebook helps you connect an share with the people in your life</p>
 	</div>
 
@@ -27,7 +109,7 @@
 
 <div class="line"></div>
 		
-		<button class="signup" type="submit">Create new account</button>
+		<button class="signup" onclick="location.href='registration.html'">Create new account</button>
 	</div>
 
 
